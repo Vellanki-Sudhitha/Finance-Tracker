@@ -26,54 +26,61 @@ UI: RecyclerView, Spinner, DatePickerDialog
 
 Architecture: Simple Activity-based structure
 
+
+
+
 ## Project Architecture
 
-The Finance Tracker application follows a modular Android architecture with separate layers for UI, data handling, and model representation.
+```
 
 Finance-Tracker/
 │
 ├── app/
-│ └── src/
-│ └── main/
-│ │
-│ ├── java/com/example/financetracker/
-│ │ │
-│ │ ├── model/
-│ │ │ └── Expense.java
-│ │ │ └── Represents expense data model containing details
-│ │ │ such as title, amount, category, and date.
-│ │ │
-│ │ ├── ui/
-│ │ │ ├── adapter/
-│ │ │ │ └── ExpenseAdapter.java
-│ │ │ │ └── Handles RecyclerView data binding and display
-│ │ │ │
-│ │ │ ├── AddExpenseActivity.java
-│ │ │ │ └── Allows users to add new expenses.
-│ │ │ │
-│ │ │ ├── MainActivity.java
-│ │ │ │ └── Displays expense list and main dashboard.
-│ │ │ │
-│ │ │ └── InsightsActivity.java
-│ │ │ └── Provides expense analysis and insights.
-│ │ │
-│ │ ├── DatabaseHelper.java
-│ │ │ └── Manages SQLite database operations including
-│ │ │ storing and retrieving expense records.
-│ │ │
-│ │ └── AndroidManifest.xml
-│ │ └── Defines application components and permissions.
-│ │
-│ ├── res/
-│ │ └── layout/
-│ │ ├── activity_main.xml
-│ │ ├── activity_add_expense.xml
-│ │ ├── activity_insights.xml
-│ │ └── item_expense.xml
-│ │ └── Contains UI layouts for application screens.
-│ │
-│ └── README.md
+│   └── src/
+│       └── main/
+│           │
+│           ├── java/com/example/financetracker/
+│           │   │
+│           │   ├── model/
+│           │   │   └── Expense.java
+│           │   │       └── Represents expense data model containing details
+│           │   │           such as title, amount, category, and date.
+│           │   │
+│           │   ├── ui/
+│           │   │   ├── adapter/
+│           │   │   │   └── ExpenseAdapter.java
+│           │   │   │       └── Handles RecyclerView data binding and display.
+│           │   │   │
+│           │   │   ├── AddExpenseActivity.java
+│           │   │   │   └── Allows users to add new expenses.
+│           │   │   │
+│           │   │   ├── MainActivity.java
+│           │   │   │   └── Displays expense list and main dashboard.
+│           │   │   │
+│           │   │   └── InsightsActivity.java
+│           │   │       └── Provides expense analysis and insights.
+│           │   │
+│           │   ├── DatabaseHelper.java
+│           │   │   └── Manages SQLite database operations including
+│           │   │       storing and retrieving expense records.
+│           │   │
+│           │   └── AndroidManifest.xml
+│           │       └── Defines application components and permissions.
+│           │
+│           ├── res/
+│           │   └── layout/
+│           │       ├── activity_main.xml
+│           │       ├── activity_add_expense.xml
+│           │       ├── activity_insights.xml
+│           │       └── item_expense.xml
+│           │           └── Contains UI layouts for application screens.
+│           │
+│           └── README.md
 │
 └── Screenshots/
 └── Application screenshots demonstrating features.
+
+```
+```
+
 
